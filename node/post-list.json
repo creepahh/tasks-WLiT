@@ -1,0 +1,5 @@
+// create two routes, 
+// get "/" returns all posts
+// get "/id" return only info of given id
+
+// import fs module 
