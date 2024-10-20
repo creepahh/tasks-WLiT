@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Animal</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div id="output"></div> 
+    <div id="not"></div> 
+
+    <script>
+        let animal = ['dogs', 'cats', 'mice', 'rabbits'];
+        const a_check = ['a'];
+
+        let output = '';
+        let not = '';
+
+        for (let anim of animal) {
+            const hasA = anim.includes(a_check[0]);
+            output += `${anim}: ${hasA}<br>`; 
+
+            if (!hasA) {                                          /*doesnt have A*/
+                not += `${anim} `;
+            }
+        }
+
+        document.getElementById('output').innerHTML = output;
+
+        if (not) {
+            document.getElementById('not').innerHTML = `Animals not containing the letter 'a': <br>${not}`;
+        }
+    </script>
+
+</body>
+</html>
