@@ -1,5 +1,17 @@
-// create two routes, 
-// get "/" returns all posts
-// get "/id" return only info of given id
 
-// import fs module 
+
+[
+    {
+        "_id": "1",
+        "name": "First post",
+        "description": "description of first post",
+        "created_by":"user1"
+    },
+
+    {
+        "_id": "2",
+        "name": "Second post",
+        "description": "description of second post",
+        "created_by":"user2"
+    }
+]
